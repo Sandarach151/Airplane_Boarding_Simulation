@@ -11,7 +11,7 @@ class Passenger{
 };
 
 int main(){
-	srand(time(0));
+    srand(time(0));
     int x = 23;
     int y = 6; //fixed
     int maxBag = 2;
@@ -73,9 +73,9 @@ int main(){
                 }
                 cout << plane[i]->row << "  " << plane[i]->col << "  " << plane[i]->bag << endl;
                 if(plane[i]->bag>maxb){
-					maxb = plane[i]->bag;
-				}
-				plane[i]->bag = 0;
+		    maxb = plane[i]->bag;
+		}
+		plane[i]->bag = 0;
             }
         }
         bagTime += maxb;
@@ -83,7 +83,7 @@ int main(){
     }
     cout << endl;
     cout << endl;
-	cout << endl;
+    cout << endl;
     cout << "1 person gets up: " << up1 << endl;
     cout << "2 persons get up: " << up2 << endl;
     cout << "Obstructions caused by stowing bags: " << bagTime << endl;
